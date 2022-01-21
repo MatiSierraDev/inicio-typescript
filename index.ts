@@ -29,6 +29,3 @@ let number : number;
 let valor = 0;
 let z: number = 123.456;
 // let big: bigint = 100n;
-
-
-// sad
