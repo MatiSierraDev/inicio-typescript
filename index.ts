@@ -42,3 +42,26 @@ let sentence: string = `My name is ${firstName}.
     I am new to TypeScript.`;
 console.log(sentence);
 
+//Enumeraciones 
+//Las enumeraciones se tratan como tipos de datos y se pueden usar a fin de crear conjuntos de constantes para su uso con variables y propiedades.
+//Las enumeraciones hacen que el código sea más claro y legible, especialmente cuando se usan nombres significativos.
+
+
+enum ContractStatus {
+  Permanent,
+  Temp,
+  Apprentice
+}
+
+let employeestatus: ContractStatus = ContractStatus.Temp;
+console.log(employeestatus)
+
+//. Si quiere que los valores empiecen con un valor diferente, en este caso 1, especifíquelo en la declaración enum.
+// enum ContractStatus {
+//   Permanent = 1,
+//   Temp,
+//   Apprentice,
+// }
+
+//Para mostrar el nombre asociado a la enumeración, podemos usar el indexador proporcionado.
+console.log(ContractStatus[employeestatus]);
